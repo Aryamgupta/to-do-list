@@ -1,0 +1,178 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.main_section {
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main_section > div {
+  width: 100%;
+  /* text-align: center; */
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.new_button {
+  width: 60px;
+  height: 40px;
+  background-color: red;
+  cursor: pointer;
+}
+
+.refersh_button {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('images/2937371_arrow_refresh_reload_repeat_icon.png');
+}
+
+.button_container {
+}
+.incomplete_item_section,
+.complelte_item_section {
+  /* background-color: green; */
+  max-width: 500px;
+  min-height: 500px;
+  height: 100%;
+  width: 100%;
+  /* width: 40%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.complelte_item_section {
+  max-width: 700px;
+  /* background-color: black; */
+}
+
+.to_do_list_item {
+  /* background-color: red; */
+  width: 95%;
+  /* height: 200px; */
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  cursor: pointer;
+}
+
+.to_do_list_item > div {
+  padding: 20px;
+  /* height: 100%; */
+  width: calc(100% - 40px);
+  background-color: rebeccapurple;
+}
+
+.to_do_list_item > input {
+  margin-bottom: auto;
+}
+
+.item_des {
+  text-align: justify;
+  padding: 10px 0;
+}
+
+.item_title {
+  text-align: center;
+  width: 100%;
+}
+
+.item_itemDate_time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.location_time_left {
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.refresh {
+  background-color: transparent;
+  border: 0;
+}
+
+.refresh {
+  width: 20px;
+  /* height: 15px; */
+}
+
+.fade {
+  opacity: 0.7;
+}
+
+/* css for the item form */
+
+.item_form_section {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backfade {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.item_form {
+  background-color: red;
+  max-width: 400px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* css for status bar toggle */
+
+.status_toggle_section {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status_toggle_bar {
+  width: 100%;
+  /* height: 200px; */
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.none {
+  display: none;
+}
