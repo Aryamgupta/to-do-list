@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Hind:wght@400;500;600&family=Lexend+Zetta:wght@100;200;300;400;500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200&display=swap');
 * {
   padding: 0px;
   margin: 0px;
+}
+
+:root {
+  --background_color: #878686;
+  --font_family: 'Lexend Zetta';
+}
+
+body {
+  background-color: var(--background_color);
 }
 
 .main_section {
@@ -14,6 +24,19 @@
   flex-wrap: wrap;
 }
 
+.main_section > div > h2 {
+  font-family: var(--font_family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  color: black;
+  text-align: center;
+  text-justify: center;
+  margin: 0 auto;
+  /* display: flex; */
+}
+
 .main_section > div {
   width: 100%;
   /* text-align: center; */
@@ -21,18 +44,37 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* justify-content: center; */
 }
 
 .button_container {
   display: flex;
   flex-direction: row;
+  width: 200px;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
 .new_button {
-  width: 60px;
+  width: 40px;
   height: 40px;
-  background-color: red;
+
+  background-color: transparent;
+  /* border: 3px solid black; */
+  /* border-radius: 10px; */
+  text-align: center;
+  font-family: var(--font_family);
+  font-size: 50px;
+  padding-top: auto;
+  font-style: normal;
+  font-weight: 400;
+  padding-bottom: auto;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .refersh_button {
@@ -45,7 +87,22 @@
   background-image: url('images/2937371_arrow_refresh_reload_repeat_icon.png');
 }
 
+.clear_button {
+  text-align: center;
+  font-family: var(--font_family);
+  font-size: 35px;
+  padding-top: auto;
+  font-style: normal;
+  font-weight: 400;
+  padding-bottom: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .button_container {
+  padding: 0 30px;
 }
 .incomplete_item_section,
 .complelte_item_section {
@@ -81,7 +138,16 @@
   padding: 20px;
   /* height: 100%; */
   width: calc(100% - 40px);
-  background-color: rebeccapurple;
+  background-image: linear-gradient(120deg, transparent, transparent);
+  /* background-color: rebeccapurple; */
+  font-family: var(--font_family);
+  font-size: 15px;
+  font-weight: 100;
+  transition: background-image 2s linear;
+}
+
+.to_do_list_item > div:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .to_do_list_item > input {
@@ -140,18 +206,66 @@
 }
 
 .backfade {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .item_form {
-  background-color: red;
-  max-width: 400px;
+  /* background-color: red; */
+  max-width: 300px;
   width: 90%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
+.item_form > label {
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 5px 0;
+  /* font-size: 36px; */
+  /* line-height: 45px; */
+}
 /* css for status bar toggle */
+.item_form > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.item_form > input,
+.item_form > textarea,
+.item_form > div > input {
+  height: 30px;
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 5px 0;
+  /* background: transparent url(../images/); */
+  border: none;
+}
+
+.item_form > textarea {
+  height: 50px;
+}
+
+.item_form > div > input[type='date'],
+.item_form > div > input[type='time'] {
+  width: 50%;
+  font-family: var(--font_family);
+  font-size: 15px;
+}
+
+.item_form > div > input[type='button'] {
+  width: 50%;
+  font-size: 20px;
+  font-family: var(--font_family);
+  line-height: 22px;
+  height: 40px;
+  background-color: transparent;
+  cursor: pointer;
+}
 
 .status_toggle_section {
   width: 100%;
@@ -164,6 +278,11 @@
   align-items: center;
 }
 
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
 .status_toggle_bar {
   width: 100%;
   /* height: 200px; */
@@ -173,6 +292,19 @@
   flex-direction: column;
 }
 
+.status_toggle_bar > h2 {
+  font-family: var(--font_family);
+  font-size: 30px;
+}
+
 .none {
   display: none;
+}
+
+.status_Btns > input {
+  width: 80px;
+  height: 40px;
+  font-size: 20px;
+  background-color: none;
+  font-family: var(--font_family);
 }

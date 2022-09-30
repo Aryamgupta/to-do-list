@@ -8,14 +8,14 @@
   </head>
 
   <body>
-    <!-- html for main container -->
+    <!-- html for the main content  -->
     <section class="main_section">
       <div>
-        <h2>title</h2>
+        <h2>TO DO LIST</h2>
         <div class="button_container">
-          <div class="new_button">new</div>
+          <div class="new_button">+</div>
           <div class="refersh_button"></div>
-          <div class="clear_button">clearAll</div>
+          <div class="clear_button">X</div>
         </div>
       </div>
 
@@ -23,19 +23,26 @@
       <ul class="complelte_item_section"></ul>
     </section>
 
+    <!-- html for the filling the form -->
+
     <section class="item_form_section backfade none">
       <form class="item_form">
-        <label>title</label>
+        <label>Title</label>
         <input class="form_title" type="text" name="title" required />
-        <label for="des">description</label>
+        <label for="des">Description</label>
         <textarea class="form_des"></textarea>
-        <input type="date" required />
-        <input type="time" value="22:00" />
-        <input class="submit_btn" type="button" value="submit" step="" />
-        <input class="cancle_btn" type="button" value="cancel" />
+        <label>Date/Time</label>
+        <div>
+          <input type="date" required /> <input type="time" value="22:00" />
+        </div>
+        <div>
+          <input class="submit_btn" type="button" value="Set" step="" />
+          <input class="cancle_btn" type="button" value="Cancel" />
+        </div>
       </form>
     </section>
 
+    <!-- html for the marking the task done or not -->
     <section class="status_toggle_section backfade none">
       <div class="status_toggle_bar">
         <h2>Task Done?</h2>
@@ -45,6 +52,7 @@
         </div>
       </div>
     </section>
+
     <!-- js included -->
     <script src="index.js"></script>
   </body>
